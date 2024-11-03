@@ -20,7 +20,7 @@ if (isset($_POST['delete'])) {
     if ($conn->query($deleteSql) === TRUE) {
         echo "<script>alert('Data berhasil dihapus');</script>";
     } else {
-        echo "Error: " . $conn->error;
+        echo "Error: " . $conn->error; 
     }
 }
 

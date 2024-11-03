@@ -25,6 +25,8 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+
+
 // Query untuk memasukkan data
 $sql = "INSERT INTO penduduk (kecamatan, longitude, latitude, luas, jumlah_penduduk) 
         VALUES ('$kecamatan', $longitude, $latitude, $luas, $jumlah_penduduk)";
